@@ -1,0 +1,116 @@
+<!-- templates/customer/home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home - ShopEase{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Discover Amazing Products</h1>
+  <p>Shop from top categories and latest trends</p>
+  <a href="#products" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+</section>
+<!-- Categories Section -->
+<section class="container my-5">
+  <h2 class="mb-4 text-center">Shop by Category</h2>
+  <div class="row g-4 text-center">
+    <div class="col-md-3 col-6 category">
+      <img src="https://source.unsplash.com/300x150/?electronics" alt="Electronics" class="img-fluid mb-2">
+      <h5>Electronics</h5>
+    </div>
+    <div class="col-md-3 col-6 category">
+      <img src="https://source.unsplash.com/300x150/?fashion" alt="Fashion" class="img-fluid mb-2">
+      <h5>Fashion</h5>
+    </div>
+    <div class="col-md-3 col-6 category">
+      <img src="https://source.unsplash.com/300x150/?home" alt="Home" class="img-fluid mb-2">
+      <h5>Home</h5>
+    </div>
+    <div class="col-md-3 col-6 category">
+      <img src="https://source.unsplash.com/300x150/?sports" alt="Sports" class="img-fluid mb-2">
+      <h5>Sports</h5>
+    </div>
+  </div>
+</section>
+
+<!-- Products Section -->
+<section class="container my-5" id="products">
+  <h2 class="mb-4 text-center">Featured Products</h2>
+  <div class="row g-4">
+    <!-- Product Card -->
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card product-card shadow-sm h-100">
+        <img src="https://source.unsplash.com/400x400/?phone" class="card-img-top" alt="Product">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Smartphone X</h5>
+          <p class="text-muted mb-1">$699</p>
+          <div class="mb-2">
+            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <span class="text-muted">(120)</span>
+          </div>
+          <button class="btn btn-primary mt-auto">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card product-card shadow-sm h-100">
+        <img src="https://source.unsplash.com/400x400/?laptop" class="card-img-top" alt="Product">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Laptop Pro</h5>
+          <p class="text-muted mb-1">$999</p>
+          <div class="mb-2">
+            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <span class="text-muted">(85)</span>
+          </div>
+          <button class="btn btn-primary mt-auto">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card product-card shadow-sm h-100">
+        <img src="https://source.unsplash.com/400x400/?watch" class="card-img-top" alt="Product">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Smart Watch</h5>
+          <p class="text-muted mb-1">$199</p>
+          <div class="mb-2">
+            <span class="text-warning">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+            <span class="text-muted">(45)</span>
+          </div>
+          <button class="btn btn-primary mt-auto">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card product-card shadow-sm h-100">
+        <img src="https://source.unsplash.com/400x400/?headphones" class="card-img-top" alt="Product">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Wireless Headphones</h5>
+          <p class="text-muted mb-1">$149</p>
+          <div class="mb-2">
+            <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+            <span class="text-muted">(90)</span>
+          </div>
+          <button class="btn btn-primary mt-auto">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h4>Subscribe to our Newsletter</h4>
+    <p>Get updates about latest products and offers</p>
+    <form class="d-flex justify-content-center">
+      <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+      <button class="btn btn-primary" type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+{% endblock %}
